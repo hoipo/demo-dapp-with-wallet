@@ -6,6 +6,8 @@ import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
 
 function App() {
+  console.log('demo app started', (window as any).bybitTonWallet);
+
   return (
     <TonConnectUIProvider
       manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
