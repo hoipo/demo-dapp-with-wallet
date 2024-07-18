@@ -6,7 +6,8 @@ import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
 
 function App() {
-  console.log('demo app started', (window as any).bybitTonWallet);
+  console.log('demo app started');
+  console.log((window as any).bybitTonWallet);
 
   return (
     <TonConnectUIProvider
