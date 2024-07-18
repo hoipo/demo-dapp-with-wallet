@@ -4,9 +4,28 @@ import {THEME, TonConnectUIProvider} from "@tonconnect/ui-react";
 import {Footer} from "./components/Footer/Footer";
 import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
-
+import { Guigui } from './components/Guigui';
 function App() {
   console.log('demo app started');
+//   window.bybitTonWallet = {
+//     tonconnect: {
+//         walletInfo: {
+//     "app_name": "bybitTonWallet",
+//     "name": "Bybit Wallet",
+//     "image": "https://pic.imgdb.cn/item/6695ec6cd9c307b7e96a7334.png",
+//     "about_url": "https://www.bybit.com/web3",
+//     "deepLink": "bybitapp://",
+//     "platforms": [
+//         "ios",
+//         "android",
+//         "chrome"
+//     ]
+// },
+//         connect(...args) {console.log(args)},
+//          isWalletBrowser: true,
+//     protocolVersion: 2,
+//     }}
+        
   console.log((window as any).bybitTonWallet);
 
   return (
@@ -84,6 +103,7 @@ function App() {
     >
       <div className="app">
         <Header/>
+        <Guigui />
         <TxForm/>
         {/*<TonProofDemo />*/}
         <Footer/>
