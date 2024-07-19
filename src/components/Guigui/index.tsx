@@ -24,7 +24,7 @@ export const Guigui = () => {
 
     const handleTon = async () => {
         console.log('send ton')
-        const res = await (window as any).okxTonWallet.tonconnect.send({
+        const res = await (window as any).bybitTonWallet.tonconnect.send({
             method: 'sendTransaction',
             params: [{
                 message: [
