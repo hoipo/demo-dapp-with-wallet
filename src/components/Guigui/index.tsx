@@ -15,9 +15,16 @@ export const Guigui = () => {
             }
         ])
     }
+
+    const handleRestoreConnection = async () => {
+        console.log('restore connection')
+        const res = await (window as any).bybitTonWallet.tonconnect.restoreConnection()
+        console.log(res)
+    }
   return (
     <div>
-        <button onClick={handleConnect}>Connect</button>
+        <div><button onClick={handleConnect}>Connect</button></div>
+        <div><button onClick={handleRestoreConnection}>restore connection</button></div>
     </div>
   )
 }
