@@ -103,7 +103,7 @@ function App() {
     >
       <div className="app">
         <Header/>
-        <Guigui />
+        {/* <Guigui /> */}
         <TxForm/>
         {/*<TonProofDemo />*/}
         <Footer/>
