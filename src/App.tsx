@@ -39,7 +39,7 @@ function App() {
             name: "Bybit Wallet",
             imageUrl: "https://pic.imgdb.cn/item/6695ec6cd9c307b7e96a7334.png",
             aboutUrl: "https://www.bybit.com/web3",
-            universalLink: "https://www.bybit.com/web3/ton-connect",
+            universalLink: "https://app.bybit.com/inapp/ton-connect",
             jsBridgeKey: "bybitTonWallet",
             bridgeUrl: "https://bridge.tonapi.io/bridge",
             platforms: ["chrome", "android", "ios"]
