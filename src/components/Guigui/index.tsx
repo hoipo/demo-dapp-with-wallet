@@ -3,7 +3,7 @@ import React from 'react'
 export const Guigui = () => {
     const handleConnect = async () => {
         console.log('connect')
-        const res = await (window as any).bybitTonWallet.tonconnect.connect([
+        const res = await (window as any).bybitTonWallet.tonconnect.connect(
             2,
             {
                 "manifestUrl": "https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json",
@@ -13,7 +13,7 @@ export const Guigui = () => {
                     }
                 ]
             }
-        ])
+        )
     }
 
     const handleRestoreConnection = async () => {
