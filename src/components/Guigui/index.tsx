@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Guigui = () => {
     const handleConnect = async () => {
-        console.log('connect')
+        console.log('connect start')
         const res = await (window as any).bybitTonWallet.tonconnect.connect(
             2,
             {
@@ -14,12 +14,13 @@ export const Guigui = () => {
                 ]
             }
         )
+        console.log('connect res' + JSON.stringify(res));
     }
 
     const handleRestoreConnection = async () => {
-        console.log('restore connection')
+        console.log('restore connection start')
         const res = await (window as any).bybitTonWallet.tonconnect.restoreConnection()
-        console.log(res)
+        console.log('restoreConnection res' + JSON.stringify(res));
     }
 
     const handleTon = async () => {
