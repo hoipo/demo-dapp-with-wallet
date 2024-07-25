@@ -25,17 +25,15 @@ export const Guigui = () => {
 
     const handleTon = async () => {
         console.log('send ton')
-        const res = await (window as any).bybitTonWallet.tonconnect.send({
-            method: 'sendTransaction',
-            params: [{
-                message: [
-                    {
-                        "address": "UQAprrUX54am2NDZ9UTS11Yp2UM1OATYK6XcTU3_L744Y1uW",
-                        "amount": "1"
-                    }
-                ]
-            }], id: 0
-        });
+        const res = await (window as any).bybitTonWallet.tonconnect.send(
+            {
+                "method": "sendTransaction",
+                "params": [
+                    "{\"messages\":[{\"address\":\"EQCKWpx7cNMpvmcN5ObM5lLUZHZRFKqYA4xmw9jOry0ZsF9M\",\"amount\":\"1\",\"stateInit\":\"te6cckEBBAEAOgACATQCAQAAART/APSkE/S88sgLAwBI0wHQ0wMBcbCRW+D6QDBwgBDIywVYzxYh+gLLagHPFsmAQPsAlxCarA==\",\"payload\":\"te6ccsEBAQEADAAMABQAAAAASGVsbG8hCaTc/g==\"}],\"valid_until\":1721951711,\"from\":\"0:29aeb517e786a6d8d0d9f544d2d75629d943353804d82ba5dc4d4dff2fbe3863\",\"network\":\"-239\"}"
+                ],
+                "id": "0"
+            }
+        );
         console.log(res)
     }
     return (

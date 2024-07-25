@@ -10,7 +10,6 @@ const defaultTx: SendTransactionRequest = {
 	// The transaction is valid for 10 minutes from now, in unix epoch seconds.
 	validUntil: Math.floor(Date.now() / 1000) + 60000,
 	messages: [
-
 		{
 			// The receiver's address.
 			address: 'EQCKWpx7cNMpvmcN5ObM5lLUZHZRFKqYA4xmw9jOry0ZsF9M',
@@ -21,7 +20,6 @@ const defaultTx: SendTransactionRequest = {
 			// (optional) Payload in boc base64 format.
 			payload: 'te6ccsEBAQEADAAMABQAAAAASGVsbG8hCaTc/g==',
 		},
-
 		// Uncomment the following message to send two messages in one transaction.
 		/*
     {
