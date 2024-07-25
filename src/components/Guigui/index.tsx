@@ -31,7 +31,7 @@ export const Guigui = () => {
                 message: [
                     {
                         "address": "UQAprrUX54am2NDZ9UTS11Yp2UM1OATYK6XcTU3_L744Y1uW",
-                        "amount": "5000"
+                        "amount": "1"
                     }
                 ]
             }], id: 0

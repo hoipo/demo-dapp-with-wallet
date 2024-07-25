@@ -8,7 +8,7 @@ import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect
 // serving as a testing tool to prevent users from accidentally spending money.
 const defaultTx: SendTransactionRequest = {
 	// The transaction is valid for 10 minutes from now, in unix epoch seconds.
-	validUntil: Math.floor(Date.now() / 1000) + 600,
+	validUntil: Math.floor(Date.now() / 1000) + 60000,
 	messages: [
 
 		{
