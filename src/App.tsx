@@ -94,7 +94,7 @@ function App() {
             aboutUrl: "https://www.bybit.com",
             universalLink: "https://app.bybit.com/ton-connect",
             jsBridgeKey: "bybitTonWallet",
-            bridgeUrl: "http://ton-connect-bridge-sbu-test-5.test.efficiency.ww5sawfyut0k.bitsvc.io",
+            bridgeUrl: "http://ton-connect-bridge-sbu-test-5.test.efficiency.ww5sawfyut0k.bitsvc.io/bridge",
             platforms: ["ios", "android", "chrome"]
           },
           {
