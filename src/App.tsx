@@ -4,12 +4,13 @@ import {THEME, TonConnectUIProvider} from "@tonconnect/ui-react";
 import {Footer} from "./components/Footer/Footer";
 import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
-import { Guigui } from './components/Guigui';
+// import { Guigui } from './components/Guigui';
 import { TonProofDemo } from './components/TonProofDemo/TonProofDemo';
+
 
 function App() {
   console.log('demo app started');
-//   window.bybitTonWallet = {
+//   window.tonkeeper = {
 //     tonconnect: {
 //       listeners: [],
 //         walletInfo: {
@@ -54,6 +55,7 @@ function App() {
 //           }
 //       }
 //       },
+//       disconnect(){},
 //       send(...args: any[]) {
 //         console.log('send', args);
 //       },
@@ -88,12 +90,12 @@ function App() {
           {
             appName: "bybitTonWallet",
             name: "Bybit Wallet",
-            imageUrl: "https://pic.imgdb.cn/item/6695ec6cd9c307b7e96a7334.png",
-            aboutUrl: "https://www.bybit.com/web3",
-            universalLink: "https://app.bybit.com/inapp/ton-connect",
+            imageUrl: "https://static.bymj.io/bhop/image/Q3Kmzw7qczSZF5eqfo6pW8QuT1MDMmqC80lWxFBhiE0.png",
+            aboutUrl: "https://www.bybit.com",
+            universalLink: "https://app.bybit.com/ton-connect",
             jsBridgeKey: "bybitTonWallet",
             bridgeUrl: "https://bridge.tonapi.io/bridge",
-            platforms: ["chrome", "android", "ios"]
+            platforms: ["ios", "android", "chrome"]
           },
           {
             appName: "tonwallet",
