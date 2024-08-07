@@ -158,7 +158,7 @@ function App() {
         <Header/>
         {/* <Guigui /> */}
         <TxForm/>
-        {/* <TonProofDemo /> */}
+        <TonProofDemo />
         <Footer/>
       </div>
     </TonConnectUIProvider>
