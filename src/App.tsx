@@ -5,7 +5,7 @@ import {Footer} from "./components/Footer/Footer";
 import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
 // import { Guigui } from './components/Guigui';
-import { TonProofDemo } from './components/TonProofDemo/TonProofDemo';
+// import { TonProofDemo } from './components/TonProofDemo/TonProofDemo';
 
 
 function App() {
@@ -94,7 +94,7 @@ function App() {
             aboutUrl: "https://www.bybit.com",
             universalLink: "https://app.bybit.com/ton-connect",
             jsBridgeKey: "bybitTonWallet",
-            bridgeUrl: "https://ton-connect-bridge-sbu-test-5.test.efficiency.ww5sawfyut0k.bitsvc.io/spot/api/web3/bridge/ton/bridge",
+            bridgeUrl: "https://api-node.bybit.com/spot/api/web3/bridge/ton/bridge",
             platforms: ["ios", "android", "chrome"],
           },
           {
@@ -158,7 +158,7 @@ function App() {
         <Header/>
         {/* <Guigui /> */}
         <TxForm/>
-        <TonProofDemo />
+        {/* <TonProofDemo /> */}
         <Footer/>
       </div>
     </TonConnectUIProvider>
